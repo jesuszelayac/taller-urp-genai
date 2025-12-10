@@ -2,12 +2,12 @@
 'use client';
 
 import { useSession, signIn, signOut } from 'next-auth/react';
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, ReactNode } from 'react';
 
 type Mensaje = { de: 'usuario' | 'bot'; texto: string };
 
-// --- INICIO DE LA FUNCIÓN A AGREGAR ---
-const renderizarConLinks = (texto: string) => {
+// --- CORRECCIÓN CLAVE: Agregar el tipo de retorno explícito (: ReactNode) ---
+const renderizarConLinks = (texto: string): ReactNode => {
   // Regex simple para encontrar URLs que comienzan con http:// o https://
   const urlRegex = /(https?:\/\/[^\s]+)/g;
 
@@ -23,7 +23,6 @@ const renderizarConLinks = (texto: string) => {
           href={parte} 
           target="_blank" 
           rel="noopener noreferrer" 
-          // Estilos para que el enlace se vea claro y clicable en el fondo oscuro
           className="text-blue-300 hover:text-blue-200 underline" 
         >
           {parte}
@@ -34,7 +33,7 @@ const renderizarConLinks = (texto: string) => {
     return parte;
   });
 };
-// --- FIN DE LA FUNCIÓN A AGREGAR ---
+// --- FIN DE LA FUNCIÓN ---
 
 export default function Page() {
   const { data: session } = useSession();
