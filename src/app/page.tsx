@@ -52,13 +52,13 @@ export default function Page() {
 
   return (
     <div className="h-full flex flex-col p-4">
-      <header className="mb-4 flex justify-between items-center">
+      <header className="mb-4 flex justify-between items-center text-gray-800">
         <div>
-          <span className="font-medium">¡Hola, {session.user?.email}!</span>
+          <span className="font-medium text-gray-800">¡Hola, {session.user?.email}!</span>
         </div>
         <button
           onClick={() => signOut()}
-          className="text-sm text-gray-600 hover:underline"
+          className="text-sm text-gray-800 hover:underline"
         >
           Cerrar sesión
         </button>
@@ -70,8 +70,8 @@ export default function Page() {
             key={i}
             className={`p-3 rounded max-w-[70%] ${
               m.de === 'usuario'
-                ? 'ml-auto bg-blue-100 text-right'
-                : 'mr-auto bg-gray-100'
+                ? 'ml-auto bg-blue-100 text-gray-900 text-right'
+                : 'mr-auto bg-gray-700 text-white'
             }`}
           >
             {m.texto}
@@ -81,7 +81,7 @@ export default function Page() {
 
       <form onSubmit={enviar} className="mt-2 flex gap-2">
         <input
-          className="flex-1 rounded border px-3 py-2"
+          className="flex-1 rounded border px-3 py-2 text-gray-900"
           placeholder="Escribe tu mensaje…"
           value={msg}
           onChange={(e) => setMsg(e.target.value)}
