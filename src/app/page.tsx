@@ -6,6 +6,36 @@ import { useState, FormEvent } from 'react';
 
 type Mensaje = { de: 'usuario' | 'bot'; texto: string };
 
+// --- INICIO DE LA FUNCIÓN A AGREGAR ---
+const renderizarConLinks = (texto: string) => {
+  // Regex simple para encontrar URLs que comienzan con http:// o https://
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+
+  // Dividir el texto por las URLs y mapear cada parte
+  const partes = texto.split(urlRegex);
+
+  return partes.map((parte, index) => {
+    // Si la parte coincide con una URL, la convertimos en un enlace
+    if (parte.match(urlRegex)) {
+      return (
+        <a 
+          key={index} 
+          href={parte} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          // Estilos para que el enlace se vea claro y clicable en el fondo oscuro
+          className="text-blue-300 hover:text-blue-200 underline" 
+        >
+          {parte}
+        </a>
+      );
+    }
+    // Si no es una URL, lo devolvemos como texto normal
+    return parte;
+  });
+};
+// --- FIN DE LA FUNCIÓN A AGREGAR ---
+
 export default function Page() {
   const { data: session } = useSession();
   const [chat, setChat] = useState<Mensaje[]>([]);
