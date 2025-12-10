@@ -81,7 +81,7 @@ export default function Page() {
 
       <form onSubmit={enviar} className="mt-2 flex gap-2">
         <input
-          className="flex-1 rounded border px-3 py-2 text-gray-900"
+          className="flex-1 rounded border px-3 py-2 bg-white text-gray-900"
           placeholder="Escribe tu mensaje…"
           value={msg}
           onChange={(e) => setMsg(e.target.value)}
