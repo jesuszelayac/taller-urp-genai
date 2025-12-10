@@ -103,7 +103,7 @@ export default function Page() {
                 : 'mr-auto bg-gray-700 text-white'
             }`}
           >
-            {m.texto}
+            {renderizarConLinks(m.texto)}
           </div>
         ))}
       </div>
