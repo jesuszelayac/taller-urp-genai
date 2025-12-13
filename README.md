@@ -2,29 +2,29 @@
 ![alt text](image.png)
 ## Descripción General
 
-[cite_start]**Onboard AI** es un Asistente Inteligente conversacional que utiliza Inteligencia Artificial Generativa (GenAI) y la arquitectura RAG (Retrieval-Augmented Generation) para **facilitar y acelerar la curva de aprendizaje de nuevos integrantes** a una empresa[cite: 6, 22].
+**Onboard AI** es un Asistente Inteligente conversacional que utiliza Inteligencia Artificial Generativa (GenAI) y la arquitectura RAG (Retrieval-Augmented Generation) para **facilitar y acelerar la curva de aprendizaje de nuevos integrantes** a una empresa.
 
-[cite_start]Su propósito es apoyar al talento que ingresa y aligerar la carga del equipo mentor, centralizando la documentación corporativa y respondiendo dudas específicas e instantáneas de manera precisa[cite: 25, 24].
+Su propósito es apoyar al talento que ingresa y aligerar la carga del equipo mentor, centralizando la documentación corporativa y respondiendo dudas específicas e instantáneas de manera precisa.
 
-[cite_start]El sistema permite a los nuevos empleados realizar consultas sobre procedimientos, manuales y políticas de la empresa, actuando como un coach 24/7 y logrando una compresión significativa del tiempo necesario para alcanzar la plena productividad[cite: 25, 27].
+El sistema permite a los nuevos empleados realizar consultas sobre procedimientos, manuales y políticas de la empresa, actuando como un coach 24/7 y logrando una compresión significativa del tiempo necesario para alcanzar la plena productividad.
 ![alt text](image-1.png)
 ---
 
 ## Objetivo
 
-[cite_start]Acortar la curva de aprendizaje del nuevo talento, transformando un proceso tradicionalmente lento (hasta 28-32 semanas en roles especializados [cite: 16][cite_start]) a uno acelerado, permitiendo alcanzar la plena productividad en tan solo 2 meses[cite: 34]. [cite_start]Esto se logra mediante la centralización de conocimiento y el soporte inteligente continuo[cite: 24, 25].
+Acortar la curva de aprendizaje del nuevo talento, transformando un proceso tradicionalmente lento (hasta 28-32 semanas en roles especializados) a uno acelerado, permitiendo alcanzar la plena productividad en tan solo 2 meses. Esto se logra mediante la centralización de conocimiento y el soporte inteligente continuo.
 
 ---
 
 ## Funcionalidades Clave
 
-- [cite_start]**Curva de Aprendizaje Acelerada:** Reducción del tiempo para alcanzar la plena productividad, respaldada por evidencia como el NBER Working Paper 31161[cite: 39, 27].
-- [cite_start]**Soporte 24/7:** Actúa como un *coach* inteligente que responde dudas específicas al instante[cite: 25].
-- [cite_start]**Centralización de Conocimiento:** Procesa y gestiona toda la documentación pertinente de la empresa (PDFs, documentos, manuales, etc.)[cite: 24].
-- [cite_start]**Arquitectura RAG:** Utiliza la arquitectura Retrieval-Augmented Generation para asegurar la relevancia y exactitud de las respuestas[cite: 22, 26].
-- [cite_start]**Trazabilidad de Interacciones:** Monitoreo del historial y flujo de conversaciones mediante **LangSmith**[cite: 60].
-- [cite_start]Interfaz de chat responsiva construida con Next.js[cite: 48].
-- [cite_start]Autenticación segura (Login Mediante Google)[cite: 52].
+- **Curva de Aprendizaje Acelerada:** Reducción del tiempo para alcanzar la plena productividad, respaldada por evidencia como el NBER Working Paper 31161.
+- **Soporte 24/7:** Actúa como un *coach* inteligente que responde dudas específicas al instante.
+- **Centralización de Conocimiento:** Procesa y gestiona toda la documentación pertinente de la empresa (PDFs, documentos, manuales, etc.).
+- **Arquitectura RAG:** Utiliza la arquitectura Retrieval-Augmented Generation para asegurar la relevancia y exactitud de las respuestas.
+- **Trazabilidad de Interacciones:** Monitoreo del historial y flujo de conversaciones mediante **LangSmith**.
+- Interfaz de chat responsiva construida con Next.js.
+- Autenticación segura (Login Mediante Google).
 
 ---
 
@@ -88,7 +88,6 @@ OPENAI_API_KEY=tu_api_key
 LANGCHAIN_API_KEY=tu_api_langchain
 LANGCHAIN_PROJECT=onboard-ai-project
 LANGSMITH_ENDPOINT=https://api.smith.langchain.com
-# **Actualizar según las BDs usadas en tu arquitectura (conversaciones y vectorización)**
 DB_URI_CONVERSATIONS=postgresql://user:password@host:port/dbname
 ES_URL=https://tu-servidor-elastic:9200
 ES_USER=elastic
@@ -121,7 +120,6 @@ Crea un archivo .env.local en frontend:
 NEXTAUTH_URL=https://tu-frontend.vercel.app/
 GOOGLE_CLIENT_ID=tu_client_id
 GOOGLE_CLIENT_SECRET=tu_client_secret
-# (Eliminamos OPENAI_API_KEY del frontend por seguridad, el backend lo maneja)
 API_BACKEND_URL=https://tu-backend.cloudrun.app
 
 #### Ejecución Local
@@ -186,7 +184,7 @@ Despliegue del Frontend
 
 ## Autor
 
-**Jesús Zelaya**  
+Jesús Zelaya
 LinkedIn: https://www.linkedin.com/in/jesuszelayac/
 
 ---
