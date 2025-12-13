@@ -174,20 +174,21 @@ Despliegue del Frontend
 
 ## Stack Tecnológico
 
-**Frontend:**  
-[cite_start]Next.js, React, TailwindCSS (Asunción), NextAuth (OAuth2), Vercel [cite: 48, 45, 52]  
+**Frontend:**  
+Next.js, React, TailwindCSS (asunción), NextAuth (OAuth2), Vercel.
 
-**Backend & RAG:**  
-[cite_start]Flask, LangChain, LangSmith, LlamaIndex, OpenAI GPT/Otro LLM, Elasticsearch, Base de Datos Conversacional (PostgreSQL/Otro) [cite: 57, 60, 67, 64, 62]  
+**Backend & RAG:**  
+Flask, LangChain, LangSmith, LlamaIndex, OpenAI GPT/otro LLM, Elasticsearch, base de datos conversacional (PostgreSQL/u otro).
 
-**Infraestructura:**  
-[cite_start]Docker, Google Cloud Run [cite: 55]  
+**Infraestructura:**  
+Docker, Google Cloud Run.
 
 ---
 
 ## Autor
 
 Jesús Zelaya
+
 LinkedIn: https://www.linkedin.com/in/jesuszelayac/
 
 ---
