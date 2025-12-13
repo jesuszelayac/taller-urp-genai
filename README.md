@@ -21,7 +21,7 @@ Acortar la curva de aprendizaje del nuevo talento, transformando un proceso trad
 
 ## Funcionalidades Clave
 
-- **Curva de Aprendizaje Acelerada:** Reducción del tiempo para alcanzar la plena productividad, respaldada por evidencia como el NBER Working Paper 31161.
+- **Curva de Aprendizaje Acelerada:** Reducción del tiempo para alcanzar la plena productividad, respaldada por evidencia como el [NBER Working Paper 31161](https://www.nber.org/papers/w31161).
 - **Soporte 24/7:** Actúa como un *coach* inteligente que responde dudas específicas al instante.
 - **Centralización de Conocimiento:** Procesa y gestiona toda la documentación pertinente de la empresa (PDFs, documentos, manuales, etc.).
 - **Arquitectura RAG:** Utiliza la arquitectura Retrieval-Augmented Generation para asegurar la relevancia y exactitud de las respuestas.
@@ -36,26 +36,26 @@ Acortar la curva de aprendizaje del nuevo talento, transformando un proceso trad
 El proyecto se divide en tres componentes principales que implementan el flujo RAG:
 
 ### 1. Frontend
-- [cite_start]Framework: Next.js (React) [cite: 48]
-- Estilos: (Se mantiene la asunción de TailwindCSS o similar para interfaz responsiva)
-- [cite_start]Autenticación: **NextAuth** (Asunción, basado en Login Mediante Google [cite: 52])
-- [cite_start]Despliegue: **Vercel** [cite: 45]
+- Framework: Next.js (React).
+- Estilos: (Se mantiene la asunción de TailwindCSS o similar para interfaz responsiva).
+- Autenticación: **NextAuth** (asunción, basado en login mediante Google).
+- Despliegue: **Vercel**.
 - Características principales:
   - Interfaz conversacional moderna.
   - Interacción con el Asistente GenAI.
   - Control de sesión seguro.
 
 ### 2. Backend (Agente GenAI)
-- [cite_start]IA: **LangChain** (Orquestación del Agente AI) [cite: 57]
-- Modelo: (Asunción: OpenAI GPT/Gemini u otro LLM de elección)
-- [cite_start]**Base Datos Conversacional:** Se utiliza una base de datos PostgreSQL para las conversaciones[cite: 62].
-- [cite_start]**Trazabilidad:** **LangSmith** (para monitoreo y depuración) [cite: 60]
-- [cite_start]Despliegue: **Cloud Run** (para la ejecución del Agente AI) [cite: 55]
+- IA: **LangChain** (orquestación del agente AI).
+- Modelo: (asunción: OpenAI GPT/Gemini u otro LLM de elección).
+- **Base Datos Conversacional:** Se utiliza una base de datos PostgreSQL para las conversaciones.
+- **Trazabilidad:** **LangSmith** (para monitoreo y depuración).
+- Despliegue: **Cloud Run** (para la ejecución del agente AI).
 
 ### 3. ETL para la Base de Datos Vectorial
-- [cite_start]**Ingesta:** Documentos estructurados y no estructurados (PDFs, Excel)[cite: 66, 65].
-- [cite_start]**Vectorización:** **LlamaIndex** (para transformar documentos en *embeddings*)[cite: 67].
-- [cite_start]**Base de Datos Vectorial:** **Elasticsearch** (para almacenamiento y búsqueda eficiente de los *embeddings*)[cite: 64, 68].
+- **Ingesta:** Documentos estructurados y no estructurados (PDFs, Excel).
+- **Vectorización:** **LlamaIndex** (para transformar documentos en *embeddings*).
+- **Base de Datos Vectorial:** **Elasticsearch** (para almacenamiento y búsqueda eficiente de los *embeddings*).
 
 ---
 
