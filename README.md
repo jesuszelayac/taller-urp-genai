@@ -1,4 +1,5 @@
 # Proyecto: Onboard AI - Asistente Inteligente para Onboarding
+
 ![alt text](image.png)
 ## Descripción General
 
@@ -7,7 +8,9 @@
 Su propósito es apoyar al talento que ingresa y aligerar la carga del equipo mentor, centralizando la documentación corporativa y respondiendo dudas específicas e instantáneas de manera precisa.
 
 El sistema permite a los nuevos empleados realizar consultas sobre procedimientos, manuales y políticas de la empresa, actuando como un coach 24/7 y logrando una compresión significativa del tiempo necesario para alcanzar la plena productividad.
+
 ![alt text](image-1.png)
+
 ---
 
 ## Objetivo
